@@ -5,12 +5,27 @@
  */
 
 module.exports = {
+  siteMetadata: {
+    title: `My Talks`,
+    author: `Name Placeholder`,
+    description: `Description placeholder`,
+    social: [
+      {
+        name: `twitter`,
+        url: `https://twitter.com/pomber`,
+      },
+      {
+        name: `github`,
+        url: `https://github.com/pomber`,
+      },
+    ],
+  },
   plugins: [
     {
       resolve: "gatsby-theme-deck-n-blog",
       options: {
         contentPath: "decks",
-        blogBasePath: "pera",
+        blogBasePath: "posts",
         // decksBasePath: "deck",
       },
     },
