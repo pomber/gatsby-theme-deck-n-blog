@@ -1,6 +1,8 @@
 import { navigate } from "gatsby"
 
 export default () => {
-  navigate("/")
+  if (typeof window !== "undefined") {
+    navigate("/")
+  }
   return ""
 }
