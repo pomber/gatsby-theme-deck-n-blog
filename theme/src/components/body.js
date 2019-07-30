@@ -9,6 +9,8 @@ import { jsx, ThemeProvider, useThemeUI } from "theme-ui"
 import Wave from "gatsby-theme-waves/src/components/wave"
 import BarScroller from "gatsby-theme-waves/src/components/bar-scroller"
 
+import { Helmet } from "react-helmet"
+
 function getIntro(children) {
   const introElement = React.Children.toArray(children).find(
     c => c.props && c.props.originalType === Intro
@@ -24,6 +26,15 @@ function getContent(children) {
     "div",
     {},
     contentElement && contentElement.props && contentElement.props.children
+  )
+}
+
+const GoogleFont = ({ theme }) => {
+  if (!theme.googleFont) return false
+  return (
+    <Helmet>
+      <link rel="stylesheet" href={theme.googleFont} />
+    </Helmet>
   )
 }
 
@@ -53,6 +64,7 @@ const Wrapper = ({ children, theme = {}, ...props }) => {
   const intro = getIntro(children)
   return (
     <div>
+      <GoogleFont theme={theme} />
       {intro}
       <Wave
         columnComponents={[DeckSticker, BarScroller]}

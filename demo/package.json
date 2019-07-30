@@ -12,6 +12,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
+    "@mdx-deck/themes": "^3.0.8",
     "gatsby": "^2.13.24",
     "gatsby-theme-deck-n-blog": "*",
     "react": "^16.8.6",
