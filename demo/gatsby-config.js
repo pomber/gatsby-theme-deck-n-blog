@@ -5,5 +5,14 @@
  */
 
 module.exports = {
-  plugins: [{ resolve: "gatsby-theme-deck-n-blog" }],
+  plugins: [
+    {
+      resolve: "gatsby-theme-deck-n-blog",
+      options: {
+        contentPath: "decks",
+        blogBasePath: "pera",
+        // decksBasePath: "deck",
+      },
+    },
+  ],
 }
