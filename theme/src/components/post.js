@@ -6,7 +6,9 @@ import Layout from "gatsby-theme-blog/src/components/layout"
 import SEO from "gatsby-theme-blog/src/components/seo"
 
 import blogTheme from "gatsby-theme-blog/src/gatsby-plugin-theme-ui/index"
+import waves from "./waves"
 import Body from "./body"
+import deepmerge from "deepmerge"
 
 const Post = ({
   data: {
@@ -20,7 +22,7 @@ const Post = ({
   next,
 }) => {
   return (
-    <ThemeProvider theme={blogTheme}>
+    <ThemeProvider theme={deepmerge(blogTheme, { styles: { waves } })}>
       <ColorMode />
       <Layout location={location} title={title}>
         <SEO title={post.title} description={post.excerpt} />

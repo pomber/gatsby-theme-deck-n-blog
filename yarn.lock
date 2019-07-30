@@ -1511,11 +1511,6 @@
   resolved "https://registry.yarnpkg.com/@styled-system/css/-/css-5.0.17.tgz#aaab722fe2f30d44b32909725f426a491e79d88d"
   integrity sha512-MSKnFq3zK53fJ/Au2oAnioNiKZJ2GATi4/tGYlh+/qSbDa09YX0siOzO8kIMKYt4L2fNCZnCuKPXJS7NFcWbmA==
 
-"@styled-system/css@^5.0.5":
-  version "5.0.11"
-  resolved "https://registry.yarnpkg.com/@styled-system/css/-/css-5.0.11.tgz#6e5aafc8a4730eab79e0dc79ac04eadae102b280"
-  integrity sha512-rq/KO2SEpUbk9dWIRdWEkNL3w6Eds55KGdAcD+9DttqrC+FwPXfk27ebmTMfwyIAiDES9uW7z57Bo6v34VUNqw==
-
 "@theme-ui/prism@^0.2.14":
   version "0.2.21"
   resolved "https://registry.yarnpkg.com/@theme-ui/prism/-/prism-0.2.21.tgz#c024b2346c9da28c51be68654697ce0f6c635c47"
@@ -5760,11 +5755,6 @@ gatsby-plugin-sharp@^2.2.8:
     sharp "^0.22.1"
     svgo "^1.2.0"
 
-gatsby-plugin-theme-ui@^0.2.2:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-theme-ui/-/gatsby-plugin-theme-ui-0.2.2.tgz#5b6db0e61033e490b76cb0b00c1350e1eb7b1165"
-  integrity sha512-SfXyerGvqzzCa6VE6oftY7WH7ySxtMLTB/27Fm5L1qVP4gnjPRyrDhSyHT2rYyzheLdT2/XYGNmsu/K47kJrFA==
-
 gatsby-plugin-theme-ui@^0.2.6:
   version "0.2.18"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-theme-ui/-/gatsby-plugin-theme-ui-0.2.18.tgz#0fc30f6140f006389be1a72b1734362f5df08f79"
@@ -5949,14 +5939,13 @@ gatsby-theme-mdx-deck@^3.0.8:
     remark-unwrap-images "^1.0.0"
     theme-ui "^0.2.14"
 
-gatsby-theme-waves@^0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/gatsby-theme-waves/-/gatsby-theme-waves-0.0.4.tgz#742df589dc7727e4937ae7ee30a646c700671117"
-  integrity sha512-Qt4lC0CONrQryOqBjWfGbLqAdOGiazCU48QAEXJNHcWQCJchhvAJi/+3+k53SjYhDALfPgvS5Y5ro256PaykCQ==
+gatsby-theme-waves@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-waves/-/gatsby-theme-waves-0.0.5.tgz#d0200f85d69fa6b8550c2dc7fb76050e13b22566"
+  integrity sha512-zNV0r37Ls9zN1dkxlaFP4F4akA7FQ+MWzjYESGnZ9KHREL88fqvnpBBlPkvA4Glp9PbmQBboR55gvZqkTBtA5A==
   dependencies:
     "@mdx-js/react" "^1.0.21"
     code-surfer "^2.0.0-alpha.10"
-    gatsby-plugin-theme-ui "^0.2.2"
     rebound "^0.1.0"
     shell-quote "^1.6.1"
 
@@ -12341,13 +12330,13 @@ theme-ui@^0.2.14:
     deepmerge "^3.2.0"
     react "^16.8.0"
 
-theme-ui@^0.2.2:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/theme-ui/-/theme-ui-0.2.2.tgz#b211ab0e565b8e74c843bc5c18b30d848ad13b15"
-  integrity sha512-ce29BzEP2pSogQ5XxtEUDXcwdtcb1SdPgJCZdFi7sfglA2vdADY6CdRXxZ6cVrdeVaDQQMtSaIbFghpplZbGMg==
+theme-ui@^0.2.23:
+  version "0.2.23"
+  resolved "https://registry.yarnpkg.com/theme-ui/-/theme-ui-0.2.23.tgz#55c7f871094f5bfe12d046bb3e8c326a81034933"
+  integrity sha512-pqGCkDVWhbV20EAaMYCNoNtfVN+AnhOIuOHkCIgizNIbUYh7f54KdiDsI1XlOVg7GkDTwqzH2G5VaBj//9Z6sg==
   dependencies:
     "@emotion/is-prop-valid" "^0.8.1"
-    "@styled-system/css" "^5.0.5"
+    "@styled-system/css" "^5.0.16"
     deepmerge "^3.2.0"
     react "^16.8.0"
 

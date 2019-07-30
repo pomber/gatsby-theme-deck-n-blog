@@ -15,7 +15,8 @@
     "gatsby": "^2.13.24",
     "gatsby-theme-deck-n-blog": "*",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "theme-ui": "^0.2.23"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
