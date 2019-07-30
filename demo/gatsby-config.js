@@ -16,7 +16,7 @@ module.exports = {
       },
       {
         name: `github`,
-        url: `https://github.com/pomber`,
+        url: `https://github.com/pomber/gatsby-theme-deck-n-blog`,
       },
     ],
   },
