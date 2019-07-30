@@ -1,51 +1,69 @@
-# Gatsby Theme
+# Deck 'n' Blog
 
-This is a bare-bones Gatsby theme to showcase how a [Theme Jam](https://themejam.gatsbyjs.org) submission should look.
-
-See the [live demo](https://gatsby-theme-jam-example.netlify.com)
+You write the MDX for your [mdx-deck](https://github.com/jxnblk/mdx-deck)s, and this Gatsby theme creates the deck and the blog post for you.
 
 ## Installation
 
 To use this theme in your Gatsby sites, follow these instructions:
 
-1.  Install the theme
+0. Init your Gatsby site (skip this if you already have a site)
 
-    ```sh
-    npm install --save gatsby-theme-jam-example
-    ```
+   ```sh
+   npx gatsby new my-gatsby-site https://github.com/gatsbyjs/gatsby-starter-default
+   cd my-gatsby-site
+   ```
 
-2.  Add the theme to your `gatsby-config.js`:
+1. Install the theme
 
-    ```js
-    module.exports = {
-      plugins: ["gatsby-theme-jam-example"],
-    }
-    ```
+   ```sh
+   npm install --save gatsby-theme-deck-n-blog
+   ```
 
-3.  Start your site
-    ```sh
-    gatsby develop
-    ```
+1. Add the theme to your `gatsby-config.js`:
 
-## Submission Checklist
+   ```js
+   module.exports = {
+     plugins: ["gatsby-theme-deck-n-blog"],
+   }
+   ```
 
-To ensure your Theme Jam submission [follows the rules](https://themejam.gatsbyjs.org/rules), use this checklist:
+1. Create a deck in `decks/my-deck.mdx`
 
-- [ ] Use our [accessibility guide][a11y] to ensure your site meets our accessibility standards
-- [ ] Run a performance audit using [Lighthouse][] and/or [WebPageTest][]
-- [ ] Set up a live demo using [Netlify][] or [GitHub Pages][]
-- [ ] Add installation documentation to the README
-- [ ] Update the `name` field in `package.json`
-- [ ] Update the `author` field in `package.json`
-- [ ] Update the `repository` field in `package.json`
-- [ ] Make sure the theme’s `keywords` in `package.json` include `gatsby`, `gatsby-theme`, and `gatsby-plugin`
-- [ ] Publish your theme to npm ([docs][npmpublish])
-- [ ] Submit your theme at https://themejam.gatsbyjs.org
+   ```md
+   ---
+   title: The Restaurant
+   date: 1980-10-12
+   ---
 
-[a11y]: https://gatsbyjs.org/docs/making-your-site-accessible#how-to-improve-accessibility
-[lighthouse]: https://developers.google.com/web/tools/lighthouse/
-[axe]: https://www.deque.com/axe/
-[webpagetest]: http://webpagetest.org/
-[netlify]: https://netlify.com
-[github pages]: https://pages.github.com/
-[npmpublish]: https://docs.npmjs.com/cli/publish
+   import { Intro, Content } from "gatsby-theme-deck-n-blog"
+
+   <Intro>
+
+   This will only appear in the blog post as an intro an as the excerpt.
+
+   </Intro>
+
+   # Slide 1
+
+   <Content>
+
+   This will appear in the blog post together with the slide 1
+
+   </Content>
+
+   ---
+
+   # Slide 2
+
+   <Content>
+
+   This will appear in the blog post together with the slide 2
+
+   </Content>
+   ```
+
+1. Start your site
+
+   ```sh
+   npm run start
+   ```
