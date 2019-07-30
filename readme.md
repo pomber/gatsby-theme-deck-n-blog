@@ -28,7 +28,7 @@ To use this theme in your Gatsby sites, follow these instructions:
    ```md
    ---
    title: The Title
-   date: 1986-20-02
+   date: 1986-02-20
    ---
 
    import { Intro, Content } from "gatsby-theme-deck-n-blog"
@@ -57,6 +57,8 @@ To use this theme in your Gatsby sites, follow these instructions:
 
    </Content>
    ```
+
+1. **Create another deck** (yes, you need to create at least two decks!) in `decks/another-deck.mdx`
 
 1. Start your site
 
