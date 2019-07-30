@@ -6,20 +6,16 @@ You write the MDX for your [mdx-deck](https://github.com/jxnblk/mdx-deck)s, and 
 
 To use this theme in your Gatsby sites, follow these instructions:
 
-0. Init your Gatsby site (skip this if you already have a site)
+1. Init your Gatsby site
 
    ```sh
-   npx gatsby new my-gatsby-site https://github.com/gatsbyjs/gatsby-starter-default
-   cd my-gatsby-site
+   mkdir my-gastby-site
+   cd my-gastby-site
+   npm install --save react react-dom gatsby gatsby-theme-deck-n-blog
+   npm init -y
    ```
 
-1. Install the theme
-
-   ```sh
-   npm install --save gatsby-theme-deck-n-blog
-   ```
-
-1. Add the theme to your `gatsby-config.js`:
+1. Create `gatsby-config.js`:
 
    ```js
    module.exports = {
@@ -31,8 +27,8 @@ To use this theme in your Gatsby sites, follow these instructions:
 
    ```md
    ---
-   title: The Restaurant
-   date: 1980-10-12
+   title: The Title
+   date: 1986-20-02
    ---
 
    import { Intro, Content } from "gatsby-theme-deck-n-blog"
@@ -65,5 +61,5 @@ To use this theme in your Gatsby sites, follow these instructions:
 1. Start your site
 
    ```sh
-   npm run start
+   npx gatsby develop
    ```

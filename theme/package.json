@@ -5,7 +5,7 @@
     "type": "git",
     "url": "https://github.com/jlengstorf/gatsby-theme-jam-example.git"
   },
-  "version": "1.0.1",
+  "version": "0.0.1",
   "main": "index.js",
   "license": "MIT",
   "peerDependencies": {
