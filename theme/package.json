@@ -1,0 +1,36 @@
+{
+  "name": "gatsby-theme-deck-n-blog",
+  "author": "Rodrigo Pombo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jlengstorf/gatsby-theme-jam-example.git"
+  },
+  "version": "1.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "peerDependencies": {
+    "gatsby": "^2.13.24",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "gatsby": "^2.13.24",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.14",
+    "@mdx-js/react": "^1.0.21",
+    "deepmerge": "^4.0.0",
+    "gatsby-plugin-theme-ui": "^0.2.2",
+    "gatsby-theme-blog": "^1.0.2",
+    "gatsby-theme-mdx-deck": "^3.0.8",
+    "gatsby-theme-waves": "^0.0.4",
+    "theme-ui": "^0.2.2"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-theme",
+    "gatsby-plugin"
+  ]
+}
