@@ -46,7 +46,6 @@ export const pageQuery = graphql`
 `
 
 export default ({ data, location }) => {
-  console.log({ data })
   const { site, allBlogPost, allDeck } = data
   const { title: siteTitle, social: socialLinks } = site.siteMetadata
   const posts = allBlogPost.edges.map(e => e.node)

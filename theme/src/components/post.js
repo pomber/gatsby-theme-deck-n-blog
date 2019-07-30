@@ -1,10 +1,12 @@
 import React from "react"
-import { Styled, css } from "theme-ui"
+import { Styled, css, ThemeProvider, ColorMode } from "theme-ui"
 
 import PostFooter from "gatsby-theme-blog/src/components/post-footer"
 import Layout from "gatsby-theme-blog/src/components/layout"
 import SEO from "gatsby-theme-blog/src/components/seo"
-import { MDXRenderer } from "gatsby-plugin-mdx"
+
+import blogTheme from "gatsby-theme-blog/src/gatsby-plugin-theme-ui/index"
+import Body from "./body"
 
 const Post = ({
   data: {
@@ -16,24 +18,29 @@ const Post = ({
   location,
   previous,
   next,
-}) => (
-  <Layout location={location} title={title}>
-    <SEO title={post.title || post.slug} description={post.excerpt} />
-    <main>
-      <Styled.h1>{post.title}</Styled.h1>
-      <Styled.p
-        css={css({
-          fontSize: 1,
-          mt: -3,
-          mb: 3,
-        })}
-      >
-        {post.date}
-      </Styled.p>
-      <MDXRenderer>{post.body}</MDXRenderer>
-    </main>
-    <PostFooter {...{ previous, next }} />
-  </Layout>
-)
+}) => {
+  return (
+    <ThemeProvider theme={blogTheme}>
+      <ColorMode />
+      <Layout location={location} title={title}>
+        <SEO title={post.title} description={post.excerpt} />
+        <main>
+          <Styled.h1>{post.title}</Styled.h1>
+          <Styled.p
+            css={css({
+              fontSize: 1,
+              mt: -3,
+              mb: 3,
+            })}
+          >
+            {post.date}
+          </Styled.p>
+          <Body body={post.body} />
+        </main>
+        <PostFooter {...{ previous, next }} />
+      </Layout>
+    </ThemeProvider>
+  )
+}
 
 export default Post

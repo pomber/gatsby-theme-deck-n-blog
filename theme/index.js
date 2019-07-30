@@ -1,3 +1,1 @@
-export const Intro = () => null
-
-export const Content = () => null
+export { Intro, Content } from "./src/components/placeholders"
